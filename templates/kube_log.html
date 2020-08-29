@@ -8,10 +8,10 @@
 
 <form method="POST" action="/">
     {{ form.csrf_token }}
-    {{ form.pod.label }} {{ form.pod(size=5) }} {{ form.submit }}
+    {{ form.pod.label }} {{ form.pod(size=5) }} {{ form.lines.label }} {{ form.lines }} {{ form.submit }}
 </form>
 
-<textarea rows="4" cols="50">
+<textarea rows="4" cols="80">
 {{ data }}</textarea>
 
 </body>
